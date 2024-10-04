@@ -1,3 +1,4 @@
+import NavBar from "./components/Navbar";
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +6,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        style={{
+          backgroundImage: `url(/landing.jpg)`,
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
