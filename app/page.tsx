@@ -1,3 +1,4 @@
+import NavBar from "./components/Navbar";
 import "./styles/reset.css";
 export default function Page() {
   return (
@@ -8,6 +9,8 @@ export default function Page() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    ></section>
+    >
+      <NavBar />
+    </section>
   );
 }
