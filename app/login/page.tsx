@@ -1,8 +1,4 @@
-import "../styles/reset.css";
+import "../styles/global.css";
 export default function Page() {
-  return (
-    <section>
-      <h1>Loginnnnnnnnnnnn</h1>
-    </section>
-  );
+  return <section></section>;
 }

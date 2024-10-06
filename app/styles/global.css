@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  ::placeholder {
+    color: white;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

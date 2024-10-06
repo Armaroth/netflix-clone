@@ -1,5 +1,8 @@
-import NavBar from "./components/Navbar";
-import "./styles/reset.css";
+import SignUp from "./components/GetStarted";
 export default function Page() {
-  return <section></section>;
+  return (
+    <section className="container">
+      <SignUp />
+    </section>
+  );
 }
