@@ -1,0 +1,38 @@
+.signUp {
+  color: white;
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+.input {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputEmail {
+  height: 45px;
+  background-color: rgba(30, 30, 30, 0.6);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 250px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.inputButton {
+  height: 45px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: red;
+  color: white;
+}
+.h1 {
+  font-size: 50px;
+}
+.h2 {
+  font-size: 25px;
+}

@@ -1,0 +1,20 @@
+.navbar {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.login {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
