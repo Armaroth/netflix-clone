@@ -1,6 +1,15 @@
 "use client";
+import { useRef, useState } from "react";
 import classes from "../styles/getStarted.module.css";
 export default function SignUp() {
+  const [email, setEmail] = useState<string>("");
+  const emailRef = useRef<HTMLInputElement | null>(null);
+  function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
+    setEmail(() => event.target.value);
+  }
+  function onGetStartedHandler(event) {
+    emailRef.current && emailRef!.current.focus();
+  }
   return (
     <section className={classes.signUp}>
       <h1 className={classes.h1}>
@@ -15,8 +24,13 @@ export default function SignUp() {
         <input
           placeholder="Email adress"
           className={classes.inputEmail}
+          ref={emailRef}
+          value={email}
+          onChange={onChangeHandler}
         ></input>
-        <button className={classes.inputButton}>Get started</button>
+        <button className={classes.inputButton} onClick={onGetStartedHandler}>
+          Get started
+        </button>
       </section>
     </section>
   );
