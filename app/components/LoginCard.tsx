@@ -15,7 +15,7 @@ export default function LoginCard() {
           </section>
           <section className={classes.footer}>
             <h1>
-              New to Netflix?{" "}
+              {" New to Netflix? "}
               <Link className={classes.link} href="/">
                 Sign up
               </Link>
