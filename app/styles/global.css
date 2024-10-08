@@ -1,12 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-
   ::placeholder {
-    color: white;
+    color: gray;
   }
 }
-.container {
+body {
   display: flex;
   justify-content: center;
   align-items: center;

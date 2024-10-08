@@ -27,7 +27,7 @@ export default function SignUp() {
           ref={emailRef}
           value={email}
           onChange={onChangeHandler}
-        ></input>
+        />
         <button className={classes.inputButton} onClick={onGetStartedHandler}>
           Get started
         </button>
