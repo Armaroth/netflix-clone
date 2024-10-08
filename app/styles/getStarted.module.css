@@ -1,7 +1,7 @@
 .signUp {
   color: white;
-  position: relative;
-  top: 200px;
+  /* position: relative;
+  top: 200px; */
   text-align: center;
 }
 .input {
@@ -13,6 +13,7 @@
 .inputEmail {
   height: 45px;
   background-color: rgba(30, 30, 30, 0.6);
+  box-sizing: border-box;
   color: white;
   border-radius: 5px;
   border: 1px solid gray;
@@ -26,7 +27,7 @@
   font-size: 18px;
   border: 0;
   border-radius: 10px;
-  margin-left: 20px;
+  margin-left: 5px;
   background-color: red;
   color: white;
 }
