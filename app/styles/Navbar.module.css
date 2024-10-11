@@ -1,11 +1,11 @@
 .navbar {
-  padding: 25px;
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -17,4 +17,23 @@
   padding: 10px 12px;
   border-radius: 10px;
   text-decoration: none;
+}
+.leftSection {
+  display: flex;
+  color: white;
+}
+.leftSection ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.leftSection li {
+  margin: 0 10px;
+}
+.leftSection li:hover {
+  color: gray;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
 }
