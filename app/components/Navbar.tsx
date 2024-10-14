@@ -16,11 +16,8 @@ export default function NavBar() {
           <Link href="/" className={classes.icon}>
             <img src="/logonetflix.png" alt="Netflix" width={80} height={40} />
           </Link>
-          <div
-            className={classes.dropDown}
-            onClick={() => setIsOpen(() => !isOpen)}
-          >
-            <h3>Browse</h3>
+          <div onClick={() => setIsOpen(() => !isOpen)}>
+            <h3 className={classes.dropDown}>Browse</h3>
             <ul
               className={
                 isOpen
