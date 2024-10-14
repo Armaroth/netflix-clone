@@ -1,32 +1,67 @@
 "use client";
 import classes from "../styles/Navbar.module.css";
-// import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { useState } from "react";
+import { BellIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { UserIcon } from "@heroicons/react/24/outline";
 export default function NavBar() {
+  const [user, setUser] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname();
   return (
     <section className={classes.container}>
       <section className={classes.navbar}>
         <section className={classes.leftSection}>
-          <Link href="/">
+          <Link href="/" className={classes.icon}>
             <img src="/logonetflix.png" alt="Netflix" width={80} height={40} />
           </Link>
-          <ul>
-            <li>Home</li>
-            <li>TV shows</li>
-            <li>Movies</li>
-            <li>News & Popular</li>
-            <li>My list</li>
-          </ul>
+          <div
+            className={classes.dropDown}
+            onClick={() => setIsOpen(() => !isOpen)}
+          >
+            <h3>Browse</h3>
+            <ul
+              className={
+                isOpen
+                  ? classes.navLinks
+                  : `${classes.navLinks} ${classes.active}`
+              }
+            >
+              <li>Home</li>
+              <li>TV shows</li>
+              <li>Movies</li>
+              <li>News & Popular</li>
+              <li>My list</li>
+            </ul>
+          </div>
         </section>
         <section className={classes.rightSection}>
-          \
-          {pathname !== "/login" && (
-            <Link href="/login" className={classes.login}>
+          <MagnifyingGlassIcon
+            height={30}
+            width={30}
+            color="white"
+            className={classes.icon}
+          />
+          <BellIcon
+            height={30}
+            width={30}
+            color="white"
+            className={classes.icon}
+          />
+          {pathname !== "/login" && !user ? (
+            <Link
+              href="/login"
+              className={`${classes.login} + ${classes.icon}`}
+            >
               <h1>Sign-in</h1>
             </Link>
+          ) : (
+            user && (
+              <Link href={"/account"} className={classes.icon}>
+                <UserIcon height={30} width={30} color="white" />
+              </Link>
+            )
           )}
         </section>
       </section>
