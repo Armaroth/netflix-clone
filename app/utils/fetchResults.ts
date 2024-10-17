@@ -1,7 +1,7 @@
 import requests from "./requests";
 import * as v from "valibot";
 import { MovieResults } from "../typings";
-export async function fetchMovies(): Promise<MovieResults | null> {
+export async function fetchMovies(): Promise<MovieResults> {
     const [
         netflixOriginals,
         trendingNow,
@@ -36,5 +36,6 @@ export async function fetchMovies(): Promise<MovieResults | null> {
     if (success) {
         return movies;
     }
-    return null;
+    throw new Error("Something went wrong with fetching the results from the TMDB api");
+
 }

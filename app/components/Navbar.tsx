@@ -21,8 +21,8 @@ export default function NavBar() {
             <ul
               className={
                 isOpen
-                  ? classes.navLinks
-                  : `${classes.navLinks} ${classes.active}`
+                  ? `${classes.navLinks} ${classes.active}`
+                  : classes.navLinks
               }
             >
               <li>Home</li>

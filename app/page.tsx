@@ -3,8 +3,8 @@
 import SignUp from "./components/GetStarted";
 import Browse from "./components/Browse";
 import { fetchMovies } from "./utils/fetchResults";
-export default async function Page() {
+export default function Page() {
   const user = true;
-  const movies = await fetchMovies();
-  return <section>{user ? <Browse movies={movies} /> : <SignUp />}</section>;
+
+  return <section>{user ? <Browse /> : <SignUp />}</section>;
 }
