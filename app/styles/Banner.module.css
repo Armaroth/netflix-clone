@@ -1,0 +1,79 @@
+.imageContainer {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+}
+.image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.title {
+  font-size: 60px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.overview {
+  width: 500px;
+  text-shadow: 1px 1px 2px black;
+}
+.display {
+  margin-left: 30px;
+}
+
+.buttons {
+  display: flex;
+  margin: 30px;
+  z-index: 2;
+  /* cursor: pointer; */
+}
+.test {
+  cursor: pointer;
+}
+.buttons button {
+  flex-direction: row;
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+
+@media (width<=768px) {
+  .title {
+    font-size: 45px;
+  }
+  .overview {
+    width: 350px;
+    font-size: 20px;
+  }
+  .display {
+    margin-left: 15px;
+  }
+}
+
+@media (width<=425px) {
+  .title {
+    font-size: 40px;
+  }
+  .overview {
+    width: 300px;
+    font-size: 15px;
+  }
+  .display {
+    margin-left: 5px;
+  }
+}
