@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .navbar {
   display: flex;
@@ -19,12 +20,12 @@
   color: white;
   align-items: center;
 }
-/* .leftSection ul {
-  } */
+
 .navLinks {
   display: flex;
   align-items: center;
   list-style: none;
+  text-shadow: 1px 1px 2px black;
 }
 .leftSection li {
   margin: 0 10px;

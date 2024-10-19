@@ -6,7 +6,7 @@ async function Browse() {
   const movies = await fetchMovies();
   return (
     <div className={classes.test}>
-      <Banner movies={movies} />
+      <Banner movies={movies.netflixOriginals} />
     </div>
   );
 }

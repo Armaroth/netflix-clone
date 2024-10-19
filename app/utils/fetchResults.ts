@@ -31,8 +31,6 @@ export async function fetchMovies(): Promise<MovieResults> {
         romanceMovies: romanceMovies.results,
         documentaries: documentaries.results,
     });
-    console.log(netflixOriginals.results)
-    console.log(success, 'e')
     if (success) {
         return movies;
     }
