@@ -8,3 +8,15 @@
 button {
   border: none;
 }
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: gray;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}

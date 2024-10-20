@@ -8,14 +8,16 @@ async function Browse() {
   return (
     <section className={classes.browse}>
       <Banner movies={movies.netflixOriginals} />
-      <Row title="Netflix originals" movies={movies.netflixOriginals} />
-      <Row title="Trendin now" movies={movies.trendingNow} />
-      <Row title="Top rated" movies={movies.topRated} />
-      <Row title="Comedy movies" movies={movies.comedyMovies} />
-      <Row title="Documentaries" movies={movies.documentaries} />
-      <Row title="Horror movies" movies={movies.horrorMovies} />
-      <Row title="Romance movies" movies={movies.romanceMovies} />
-      <Row title="Action movies" movies={movies.actionMovies} />
+      <section className={classes.rowContainer}>
+        <Row title="Netflix originals" movies={movies.netflixOriginals} />
+        <Row title="Trendin now" movies={movies.trendingNow} />
+        <Row title="Top rated" movies={movies.topRated} />
+        <Row title="Comedy movies" movies={movies.comedyMovies} />
+        <Row title="Documentaries" movies={movies.documentaries} />
+        <Row title="Horror movies" movies={movies.horrorMovies} />
+        <Row title="Romance movies" movies={movies.romanceMovies} />
+        <Row title="Action movies" movies={movies.actionMovies} />
+      </section>
     </section>
   );
 }
