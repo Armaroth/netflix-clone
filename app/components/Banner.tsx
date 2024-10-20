@@ -18,7 +18,6 @@ function Banner({ movies }: Props) {
           }`}
           width={1000}
           height={600}
-          // fill={true}
           alt={"featured netflix original"}
           className={classes.image}
         />
