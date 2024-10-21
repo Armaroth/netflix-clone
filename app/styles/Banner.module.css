@@ -40,6 +40,9 @@
 .test {
   cursor: pointer;
 }
+.icon {
+  margin-left: 5px;
+}
 .buttons button {
   flex-direction: row;
   margin-right: 10px;
@@ -74,5 +77,15 @@
   }
   .display {
     margin-left: 5px;
+  }
+  .buttons {
+    margin-left: 5px;
+  }
+  .buttons button {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .icon {
+    width: 20px;
   }
 }

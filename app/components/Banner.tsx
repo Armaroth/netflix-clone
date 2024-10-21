@@ -29,10 +29,15 @@ function Banner({ movies }: Props) {
       <section className={classes.buttons}>
         <button className={classes.test}>
           Play
-          <PlayIcon height={30} width={30} />
+          <PlayIcon height={30} width={30} className={classes.icon} />
         </button>
         <button className={classes.test}>
-          See more <InformationCircleIcon height={30} width={30} />
+          See more
+          <InformationCircleIcon
+            height={30}
+            width={30}
+            className={classes.icon}
+          />
         </button>
       </section>
     </section>
