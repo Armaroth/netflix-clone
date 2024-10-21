@@ -10,7 +10,11 @@ export default function LoginCard() {
           </section>
           <section className={classes.form}>
             <input className={classes.input} placeholder="Email" />
-            <input className={classes.input} placeholder="Password" />
+            <input
+              className={classes.input}
+              placeholder="Password"
+              type="password"
+            />
             <button className={classes.signInButton}>Sign in</button>
           </section>
           <section className={classes.footer}>

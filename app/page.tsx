@@ -3,6 +3,6 @@
 import SignUp from "./components/GetStarted";
 import Browse from "./components/Browse";
 export default function Page() {
-  const user = true;
+  const user = false;
   return <section>{user ? <Browse /> : <SignUp />}</section>;
 }
