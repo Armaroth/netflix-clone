@@ -1,0 +1,19 @@
+.message {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+}
+.message button {
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

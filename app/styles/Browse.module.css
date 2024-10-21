@@ -1,0 +1,10 @@
+.browse {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.rowContainer {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(27, 26, 26) 10%);
+}

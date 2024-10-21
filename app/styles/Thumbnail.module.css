@@ -1,0 +1,22 @@
+.thumbnail {
+  margin: 0 5px;
+}
+.thumbnail :hover {
+  transform: scale(1.05);
+  transition: ease-out;
+  transition-duration: 0.2s;
+}
+
+@media (width<=768px) {
+  .image {
+    width: 240px;
+    height: 120px;
+  }
+}
+
+@media (width<=425px) {
+  .image {
+    width: 160px;
+    height: 80px;
+  }
+}

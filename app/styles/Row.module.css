@@ -1,0 +1,44 @@
+.thumbnail {
+  display: flex;
+}
+.row {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.row .icon {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.left {
+  left: 2px;
+}
+
+.right {
+  right: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width<=768px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (width<=425px) {
+  .title {
+    font-size: 30px;
+  }
+}
